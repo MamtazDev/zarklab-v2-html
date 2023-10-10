@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #050505;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+}
+
+
+
+
+.container {
+    max-width: 1200px;
+}
+
+
+h3 {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+/* Modal Start */
+.loginhere p,
+.loginhere a {
+    color: #FFF;
+    font-size: 15px;
+}
+
+.auth_modal h6 {
+    color: #FFF;
+    font-size: 20px !important;
+}
+
+.modal-content {
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #181818;
+    padding: 40px 30px;
+}
+
+.auth_modal label,
+.auth_modal input,
+.auth_modal input::placeholder {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.auth_modal input {
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background: transparent;
+    padding: 5px 20px;
+    width: 334px !important;
+}
+
+.pass_eye img {
+    top: 41px;
+    right: 15%;
+}
+
+.btnSubmit,
+.btnloading {
+    padding: 9px 28px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+.btnloading span {
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    display: block
+}
+
+.password_strong span {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #14F092;
+    border-radius: 6px;
+}
+
+.password_strong p {
+    color: var(--website-white, #FFF);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.loginhere {
+    margin-top: 70px;
+}
+
+.loginhere a {
+    text-decoration: none;
+    transition: 0.9s ease-in-out !important;
+}
+
+.loginhere a:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width:768px) {
+    .auth_modal input {
+        width: 310px;
+    }
+
+    .modal-content {
+        padding: 40px 0px;
+    }
+
+    .auth_modal h6 {
+        font-size: 16px !important;
+    }
+
+    .auth_modal label,
+    .auth_modal input,
+    .auth_modal input::placeholder {
+        font-size: 14px;
+    }
+
+    .loginhere p,
+    .loginhere a {
+        color: #FFF;
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width:390px) {
+    .pass_eye img {
+        top: 36px;
+        right: 3%;
+    }
+}
+
+
+/* Modal End */
