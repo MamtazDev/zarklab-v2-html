@@ -33,8 +33,6 @@ ul li {
 }
 
 
-
-
 .container {
     max-width: 1200px;
 }
@@ -46,13 +44,18 @@ h3 {
     font-weight: 500;
 }
 
+.title {
+    color: #FFF;
+    font-size: 20px !important;
+    font-weight: 400;
+}
 
-
-
-
-
-
-
+.content,
+.content a {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+}
 
 /* Modal Start */
 .loginhere p,
@@ -177,3 +180,15 @@ h3 {
 
 
 /* Modal End */
+
+
+/* Dashboard CSS Start */
+
+.activeNav {
+    padding: 8px;
+    border-radius: 10px;
+    background: #202123;
+    color: #FFF;
+}
+
+/* Dashboard CSS End */
