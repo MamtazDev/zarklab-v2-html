@@ -186,11 +186,11 @@ h3 {
 :focus-visible {
     outline: none;
 }
+
 .activeNav {
-    padding: 8px;
     border-radius: 10px;
     background: #202123;
-    color: #FFF;
+    color: #FFF !important;
 }
 
 .chatbg::-webkit-scrollbar {
@@ -206,12 +206,18 @@ h3 {
 }
 
 .chatbg::-webkit-scrollbar-thumb:hover {
-    background: #818181; 
-  }
+    background: #818181;
+}
 
-.inputField{
+.inputField {
     color: #FFF;
     font-size: 14px;
-    
 }
+
+.newbg {
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 20% 100%, 0% 50%);
+    background-color: #B0391F;
+    padding: 4px 15px 4px 19px;
+}
+
 /* Dashboard CSS End */
