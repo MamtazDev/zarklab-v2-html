@@ -183,6 +183,7 @@ h3 {
 
 
 /* Dashboard CSS Start */
+/* Chat Terminal Page Start */
 :focus-visible {
     outline: none;
 }
@@ -220,4 +221,21 @@ h3 {
     padding: 4px 15px 4px 19px;
 }
 
+
+/* Chat Terminal Page end */
+
+/* Comming Soon Page Start */
+
+.comingSoon{
+    background-image: url("../assets/newcommingSoon.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Comming Soon Page End */
+
 /* Dashboard CSS End */
+
