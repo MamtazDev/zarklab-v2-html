@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Account Setting</title>
+</head>
+
+<body>
+    <main>
+        <div class="flex gap-[10px]">
+            <div class="hidden lg:block w-[219px] h-screen border-r border-r-[#2B2C2F]">
+                <div
+                    class="bg-[#0d0d0d] w-full h-screen text-[#8A8A8A] px-[20px] pt-[32px] pb-[62px] flex flex-col justify-between">
+                    <div class="flex flex-col gap-[32px]">
+                        <div class="mb-[25px]">
+                            <a aria-current="page" class="active" href="/">
+                                <div class="flex  gap-[14px] items-center w-[131px] ">
+                                    <img src="./assets/companyLogo.png" alt="" class="object-contain">
+                                </div>
+                            </a>
+                        </div>
+
+                        <a class="flex items-center p-[8px] text-[14px] gap-[8px] text-[#8A8A8A] font-[400] " href="#">
+                            <img src="/assets/portfolio.png" alt="" class="object-contain h-[25px] w-[25px]">
+                            Recommender
+                        </a>
+                        <a class="flex items-center p-[8px]  text-[14px] gap-[8px] text-[#8A8A8A] font-[400] w-[18px] h-[18px]"
+                            href="/token">
+                            <img src="/assets/token.png" alt="" class="object-contain h-[25px] w-[25px] ml-[2px]">
+                            Token
+                        </a>
+                        <a class="activeNav flex items-center p-[8px] text-[14px] gap-[8px] text-[#8A8A8A] font-[400] whitespace-nowrap"
+                            href="index.html">
+                            <img src="/assets/chat.png" alt="" class="object-contain h-[25px] w-[25px]">
+                            Chat Terminal
+                        </a>
+                        <a class="flex items-center justify-between p-[8px] text-[14px] text-[#8A8A8A] font-[400] "
+                            href="#">
+                            <div class="flex items-center gap-[8px]">
+                                <img src="/assets/portfolionew.png" alt="" class="object-contain h-[25px] w-[25px]">
+                                Portfolio
+                            </div>
+                            <button class="ms-5">
+                                <img src="/assets/Status.png" alt="" class="object-contain h-[25px] w-[25px]">
+                            </button>
+                        </a>
+                        <a class="flex items-center justify-between p-[8px] text-[14px] text-[8A8A8A] font-[400] "
+                            href="/market">
+                            <div class="flex items-center gap-[8px]">
+                                <img src="/assets/market.png" alt="" class="object-contain h-[25px] w-[25px]">
+                                Market
+                            </div>
+                            <button>
+                                <img src="/assets/Status.png" alt="" class="object-contain h-[25px] w-[25px]">
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-[20px] pt-[64px] border-t border-[#212123]">
+                        <div class="flex gap-[10px]">
+                            <div class="rounded-full w-[18px] h-[18px]">
+                                <img src="./assets/avatar1.png" alt=""
+                                    class="w-full h-full object-contain rounded-full">
+                            </div>
+                            <p class="text-[14px] font-[400]">Spiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w-full h-screen overflow-y-auto no-scrollbar">
+                <div>
+                    <div class="p-[24px] border-b border-b-[#2B2C2F]">
+                        <p class="text-[24px] text-[#FFF] font-[600]">Account Setting</p>
+                    </div>
+                    <div class="max-w-[1250px] mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-2  gap-[70px] mt-[32px]">
+                            <div>
+                                <div class="pb-[16px] border-b border-b-[#2B2C2F] mb-[20px] w-full">
+                                    <p class="text-[20px] text-[#8A8A8A] font-[600]">PROFILE</p>
+                                </div>
+                                <img class="h-[67px] w-[67px] rounded-[50%] mb-[22px]" src="./assets/avatar3.png"
+                                    alt="Profile image">
+                                <div class="mb-[70px]">
+                                    <div class="grid grid-cols-2 gap-[60px]">
+                                        <div class="flex flex-col gap-4">
+                                            <p class="text-[16px] font-[400] text-[#EDEDED]">Username</p>
+                                            <p class="text-[16px] font-[400] text-[#EDEDED]">Email</p>
+                                        </div>
+                                        <div class="flex flex-col gap-4">
+                                            <p class="text-[16px] font-[600] text-[#FFF]">SPIRO</p>
+                                            <p class="text-[16px] font-[600] text-[#FFF]">SPIRIDON@ZARKLAB.AI</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pb-[16px] border-b border-b-[#2B2C2F] mb-[20px] w-full">
+                                    <p class="text-[20px] text-[#8A8A8A] font-[600]">YOUR PLAN</p>
+                                </div>
+                                <div class="mb-[56px]">
+                                    <div class="grid grid-cols-2 gap-[60px]">
+                                        <div class="flex flex-col gap-4">
+                                            <p class="text-[16px] font-[400] text-[#EDEDED]">Plan</p>
+                                            <p class="text-[16px] font-[400] text-[#EDEDED]">Billing Cycle</p>
+                                            <p class="text-[16px] font-[400] text-[#EDEDED]">Next Payment Due</p>
+                                        </div>
+                                        <div class="flex flex-col gap-4">
+                                            <p class="text-[16px] font-[600] text-[#14F092]">FOUNDATION PLAN </p>
+                                            <p class="text-[16px] font-[600] text-[#FFF]">MONTHLY</p>
+                                            <p class="text-[16px] font-[600] text-[#FFF]">08 / 24 / 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button
+                                    class="text-[14px] text-[#8A8A8A] px-[15px] py-[13px] border border-[#666] rounded-full">
+                                    Change Plan
+                                </button>
+                            </div>
+                            <div>
+                                <div class="pb-[16px] border-b border-b-[#2B2C2F] mb-[20px] w-full">
+                                    <p class="text-[20px] text-[#8A8A8A] font-[600]">PAYMENT METHOD</p>
+                                </div>
+                                <div>
+                                    <div class="flex flex-col gap-[25px] mb-[44px]">
+                                        <p class="text-[#DADADA] text-[16px] font-[400]">Currently Linked
+                                        </p>
+                                        <div class="flex justify-between items-center w-full">
+                                            <div class="flex items-center gap-[40px]">
+                                                <div class="flex items-center gap-[12px]">
+                                                    <img class="h-[40px] w-[40px] rounded-[50%]" src="./assets/visa.png"
+                                                        alt="Card">
+                                                    <div>
+                                                        <p class="text-[#EBEBEB] text-[16px] font-[400]">
+                                                            Sp******@zarklab.ai
+                                                        </p>
+                                                        <p class="text-[#747474] text-[12px] font-[400]">Balance | USD
+                                                            $10,337</p>
+                                                    </div>
+                                                </div>
+                                                <p
+                                                    class="px-[15px] py-[5px] text-[#8A8A8A] text-[10px] font-[400] border border-[#666] rounded-[4px]">
+                                                    DEFAULT
+                                                </p>
+                                            </div>
+
+                                            <button>
+                                                <img src="./assets/right_arrow.png" alt="Details">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-[25px]">
+                                        <p class="text-[#DADADA] text-[16px] font-[400]">Currently Add Methods
+                                        </p>
+                                        <button class="flex items-center gap-[12px] text-[#FFF] text-[16px] font-[400]">
+                                            <img class="h-[40px] w-[40px] rounded-[50%]" src="./assets/methodImg.png"
+                                                alt="Card">Cards
+                                        </button>
+                                        <button class="flex items-center gap-[12px] text-[#FFF] text-[16px] font-[400]">
+                                            <img class="h-[40px] w-[40px] rounded-[50%]" src="./assets/paypal.png"
+                                                alt="Card">PayPal
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
