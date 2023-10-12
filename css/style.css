@@ -226,7 +226,7 @@ h3 {
 
 /* Comming Soon Page Start */
 
-.comingSoon{
+.comingSoon {
     background-image: url("../assets/newcommingSoon.png");
     background-repeat: no-repeat;
     background-position: center right;
@@ -244,7 +244,13 @@ h3 {
     padding: 33px 40px;
 }
 
+.toggle {
+    --tglbg: #0D0D0D;
+    border-color: #14F092;
+}
+
+
+
 /* Account Settings End */
 
 /* Dashboard CSS End */
-

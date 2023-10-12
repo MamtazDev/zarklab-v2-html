@@ -75,7 +75,7 @@
             </div>
 
 
-            <div class="w-full h-screen">
+            <div class="w-full">
                 <div>
                     <div class="p-[24px] border-b border-b-[#2B2C2F]">
                         <p class="text-[24px] text-[#FFF] font-[600]">Account Setting</p>
@@ -152,9 +152,45 @@
                                                 </p>
                                             </div>
 
-                                            <button>
+                                            <button onclick="cardDetails.showModal()">
                                                 <img src="./assets/right_arrow.png" alt="Details">
                                             </button>
+                                            <!-- CardDetails Modal Start -->
+                                            <dialog id="cardDetails" class="modal">
+                                                <div class="modal-box">
+                                                    <div
+                                                        class="flex items-center gap-3 border-b border-b-[#2B2C2F] pb-[20px] mb-[26px]">
+                                                        <img src="./assets/leftArrow.png" alt="Back">
+                                                        <h3 class="font-[600] text-[18px] text-[#FFF]">
+                                                            Details
+                                                        </h3>
+                                                    </div>
+                                                    <div>
+                                                        <div class="mb-[26px]">
+                                                            <img class="mx-auto" src="./assets/cardDetail.png"
+                                                                alt="Details">
+                                                        </div>
+                                                        <form action="">
+                                                            <div class="mb-[20px] md:mb-[40px] flex justify-between items-center">
+                                                                <label for="primary" class="block text-[12px] text-[#FFF] font-[400]">
+                                                                    Set as primary
+                                                                    checked
+                                                                </label>
+                                                                <input type="checkbox" class="toggle bg-[#14F092]"/>
+                                                            </div>
+                                                            <button
+                                                            class="hover:opacity-90 w-full py-[12px] text-[#939292] text-[14px] font-[500] text-center bg-[#3C3C3B] rounded-[100px]">
+                                                            Delete
+                                                        </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <form method="dialog" class="modal-backdrop">
+                                                    <button>close</button>
+                                                </form>
+                                            </dialog>
+                                            <!-- CardDetails Modal End -->
+
                                         </div>
                                     </div>
                                     <div class="flex flex-col gap-[25px]">
@@ -165,6 +201,7 @@
                                             <img class="h-[40px] w-[40px] rounded-[50%]" src="./assets/methodImg.png"
                                                 alt="Card">Cards
                                         </button>
+                                        <!-- Add Card Modal Start -->
                                         <dialog id="addCard" class="modal">
                                             <div class="modal-box">
                                                 <div
@@ -191,7 +228,8 @@
                                                                     placeholder="| Card number">
                                                             </div>
                                                         </div>
-                                                        <div class="mb-[20px] md:mb-[40px] flex justify-between items-center">
+                                                        <div
+                                                            class="mb-[20px] md:mb-[40px] flex justify-between items-center">
 
                                                             <div>
                                                                 <label for="date"
@@ -211,7 +249,8 @@
                                                                     class=" px-[10px] py-[14px] border border-[#444] bg-[#121212] rounded-[8px] bg-[#121212] text-[#FFF] text-[12px] font-[500] max-w-[117px]">
                                                             </div>
                                                         </div>
-                                                        <button class="hover:opacity-90 w-full py-[12px] text-[#939292] text-[14px] font-[500] text-center bg-[#3C3C3B] rounded-[100px]">
+                                                        <button
+                                                            class="hover:opacity-90 w-full py-[12px] text-[#939292] text-[14px] font-[500] text-center bg-[#3C3C3B] rounded-[100px]">
                                                             Add Card
                                                         </button>
 
@@ -222,6 +261,9 @@
                                                 <button>close</button>
                                             </form>
                                         </dialog>
+                                        <!-- Add Card Modal End -->
+
+
                                         <button class="flex items-center gap-[12px] text-[#FFF] text-[16px] font-[400]">
                                             <img class="h-[40px] w-[40px] rounded-[50%]" src="./assets/paypal.png"
                                                 alt="Card">PayPal
