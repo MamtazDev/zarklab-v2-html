@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -95,7 +96,8 @@
                                         </div>
                                         <div class="flex flex-col gap-4">
                                             <p class="text-[16px] font-[600] text-[#FFF]">SPIRO</p>
-                                            <p class="text-[16px] font-[600] text-[#FFF] break-words ...">SPIRIDON@ZARKLAB.AI</p>
+                                            <p class="text-[16px] font-[600] text-[#FFF] break-words ...">
+                                                SPIRIDON@ZARKLAB.AI</p>
                                         </div>
                                     </div>
                                 </div>
@@ -158,10 +160,68 @@
                                     <div class="flex flex-col gap-[25px]">
                                         <p class="text-[#DADADA] text-[16px] font-[400]">Currently Add Methods
                                         </p>
-                                        <button class="flex items-center gap-[12px] text-[#FFF] text-[16px] font-[400]">
+                                        <button onclick="addCard.showModal()"
+                                            class="flex items-center gap-[12px] text-[#FFF] text-[16px] font-[400]">
                                             <img class="h-[40px] w-[40px] rounded-[50%]" src="./assets/methodImg.png"
                                                 alt="Card">Cards
                                         </button>
+                                        <dialog id="addCard" class="modal">
+                                            <div class="modal-box">
+                                                <div
+                                                    class="flex items-center gap-3 border-b border-b-[#2B2C2F] pb-[20px] mb-[26px]">
+                                                    <img src="./assets/leftArrow.png" alt="Back">
+                                                    <h3 class="font-[600] text-[16px] text-[#FFF]">
+                                                        Add Card
+                                                    </h3>
+                                                </div>
+                                                <div>
+                                                    <form action="">
+                                                        <div class="mb-[15px] md:mb-[28px]">
+                                                            <div class="flex items-center gap-3 mb-[8px]">
+                                                                <label for=""
+                                                                    class="text-[14px] font-[500] text-[#FFF]">Card
+                                                                    Number</label>
+                                                                <img src="./assets/shield_tick.png" alt="img">
+                                                            </div>
+                                                            <div
+                                                                class="flex items-center gap-2 px-[10px] py-[14px] border border-[#444] bg-[#121212] rounded-[8px]">
+                                                                <img src="./assets/cardIcon.png" alt="img">
+                                                                <input type="text"
+                                                                    class="bg-[#121212] placeholder:text-[#444] text-[#FFF] text-[12px] font-[500] w-full"
+                                                                    placeholder="| Card number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-[20px] md:mb-[40px] flex justify-between items-center">
+
+                                                            <div>
+                                                                <label for="date"
+                                                                    class="block text-[14px] font-[500] text-[#FFF] mb-[8px]">
+                                                                    Expiration Date
+                                                                </label>
+
+                                                                <input type="date" id="date"
+                                                                    class=" px-[10px] py-[14px] border border-[#444] bg-[#121212] rounded-[8px] bg-[#121212] text-[#FFF] text-[12px] font-[500] max-w-[171px]">
+                                                            </div>
+                                                            <div>
+                                                                <label for="cvv"
+                                                                    class="block text-[14px] font-[500] text-[#FFF] mb-[8px]">
+                                                                    CVV/ CVC
+                                                                </label>
+                                                                <input type="text" id="cvv"
+                                                                    class=" px-[10px] py-[14px] border border-[#444] bg-[#121212] rounded-[8px] bg-[#121212] text-[#FFF] text-[12px] font-[500] max-w-[117px]">
+                                                            </div>
+                                                        </div>
+                                                        <button class="hover:opacity-90 w-full py-[12px] text-[#939292] text-[14px] font-[500] text-center bg-[#3C3C3B] rounded-[100px]">
+                                                            Add Card
+                                                        </button>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <form method="dialog" class="modal-backdrop">
+                                                <button>close</button>
+                                            </form>
+                                        </dialog>
                                         <button class="flex items-center gap-[12px] text-[#FFF] text-[16px] font-[400]">
                                             <img class="h-[40px] w-[40px] rounded-[50%]" src="./assets/paypal.png"
                                                 alt="Card">PayPal
