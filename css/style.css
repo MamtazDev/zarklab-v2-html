@@ -258,7 +258,11 @@ h3 {
     background-color: #fff !important;
     color: #000 !important;
     border: 1px solid #FFF !important;
-    background: #FFF !important;
+}
+
+.alertBtnActive, .alertBtn:hover{
+    background-color: #fff !important;
+    color: #000 !important;
 }
 
 

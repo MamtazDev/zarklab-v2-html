@@ -80,45 +80,92 @@
                     </div>
                     <div class="max-w-[580px] mx-auto px-2">
                         <div class="flex items-center gap-3 pb-[20px] py-[42px]">
-                           <a href="accountSettings.html">
-                            <img src="./assets/leftArrow.png" alt="Back">
-                           </a>
+                            <a href="accountSettings.html">
+                                <img src="./assets/leftArrow.png" alt="Back">
+                            </a>
                             <h3 class="font-[600] text-[20px] text-[#FFF] leading-[26px]">
                                 CHANGE PLAN
                             </h3>
                         </div>
                         <div>
                             <p class="text-[16px] text-[#FFF] font-[500] mb-[16px]">Current Plan</p>
-                            <div class="max-w-max border border-[#444] rounded-[8px] bg-[#121212] px-[15px] py-[18px] mb-[30px] md:mb-[60px]">
+                            <div
+                                class="max-w-max border border-[#444] rounded-[8px] bg-[#121212] px-[15px] py-[18px] mb-[30px] md:mb-[60px]">
                                 <p class="text-[16px] font-[600] text-[#14F092] mb-[27px]">FOUNDATION PLAN </p>
                                 <p class="text-[14px] font-[500] text-[#FFF] mb-[24px]">
-                                    1000+ crypto insights, unlimited search queries, token recommendation,<br/> portfolio optimiser, and early access to new feature launches.
+                                    1000+ crypto insights, unlimited search queries, token recommendation,<br />
+                                    portfolio optimiser, and early access to new feature launches.
                                 </p>
-                                <p class="underline decoration-1 text-[12px] font-[400] text-[#8A8A8A] mb-[15px]">Learn more</p>
-                                <p class="line-through decoration-1 text-[12px] font-[300] text-[#8A8A8A] mb-2">$30.99</p>
+                                <p class="underline decoration-1 text-[12px] font-[400] text-[#8A8A8A] mb-[15px]">Learn
+                                    more</p>
+                                <p class="line-through decoration-1 text-[12px] font-[300] text-[#8A8A8A] mb-2">$30.99
+                                </p>
                                 <p class="text-[15px] font-[500] text-[#D3D3D3]">$10.99
-                                   <span class="text-[13px] font-[500] text-[#747474]">monthly</span> 
+                                    <span class="text-[13px] font-[500] text-[#747474]">monthly</span>
                                 </p>
                             </div>
                             <div class="flex justify-between items-center mb-5 md:mb-[50px]">
                                 <p class="text-[16px] font-[500] text-[#FFF]">Billing Cycle</p>
                                 <div class="flex items-center gap-2 border border-[#444] rounded-full p-[5px]">
-                                    <button class="billBtn border border-transparent  rounded-[100px] px-[32px] py-[10px] text-[14px] font-[600] text-[#666]">
+                                    <button
+                                        class="billBtn border border-transparent  rounded-[100px] px-[32px] py-[10px] text-[14px] font-[600] text-[#666]">
                                         Monthly
                                     </button>
-                                    <button class="activeBill border border-transparent rounded-[100px] billBtn px-[32px] py-[10px] text-[14px] font-[600] text-[#666]">
+                                    <button
+                                        class="activeBill border border-transparent rounded-[100px] billBtn px-[32px] py-[10px] text-[14px] font-[600] text-[#666]">
                                         Yearly
                                     </button>
                                 </div>
                             </div>
-                            <button class="underline decoration-1 text-[16px] font-[500] text-[#8A8A8A] mb-5 md:mb-[60px]">
+                            <button onclick="cancelSubscription.showModal()"
+                                class="underline decoration-1 text-[16px] font-[500] text-[#8A8A8A] mb-5 md:mb-[60px]">
                                 Cancel Subscription
                             </button>
+
+                            <!-- Cancel Subscription Modal Start -->
+                            <dialog id="cancelSubscription" class="modal">
+                                <div class="modal-box">
+                                    <img class="mx-auto" src="./assets/cancelsubscription.png"
+                                        alt="Cancel Subscription">
+                                    <div>
+                                        <form action="">
+                                            <div class="flex flex-col gap-5 items-center">
+                                                <div>
+                                                    <p class="text-[18px] md:text-[24px] font-[600] text-[#FFF] text-center">
+                                                        We’re sorry to see you go...
+                                                    </p>
+                                                    <p class="text-[18px] md:text-[24px] font-[600] text-[#FFF] text-center">
+                                                        Are you sure?
+                                                    </p>
+                                                </div>
+                                                <p class="text-[14px] font-[400] text-[#FFF] text-center">
+                                                    You will lose your access to Zarklab but we’re always here whenever you’re ready again!
+                                                </p>
+                                                <button
+                                                    class="alertBtnActive alertBtn px-[40px] py-[13px] text-[#8A8A8A] text-[16px] md:text-[20px] font-[600] text-center bg-transparent rounded-[100px]">
+                                                    I’m sure
+                                                </button>
+                                                <button
+                                                    class="alertBtn px-[40px] py-[13px] text-[#8A8A8A] text-[16px] md:text-[20px] font-[600] text-center bg-transparent rounded-[100px]">
+                                                    Cancel
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <form method="dialog" class="modal-backdrop">
+                                    <button>close</button>
+                                </form>
+                            </dialog>
+                            <!-- Cancel Subscription Modal End -->
+                            
                             <div class="flex justify-end items-center gap-2 border-t border-t-[#2B2C2F] py-[60px]">
-                                <button class="confirmBtn px-[18px] py-[13px] text-[18px] md:text-[20px] font-[600] text-[#666] rounded-[100px] border border-transparent">
+                                <button
+                                    class="confirmBtn px-[18px] py-[13px] text-[16px] md:text-[20px] font-[600] text-[#666] rounded-[100px] border border-transparent">
                                     Cancel
                                 </button>
-                                <button class="activesub confirmBtn px-[18px] py-[13px] text-[18px] md:text-[20px] font-[600] text-[#666] rounded-[100px] border border-transparent">
+                                <button
+                                    class="activesub confirmBtn px-[18px] py-[13px] text-[16px] md:text-[20px] font-[600] text-[#666] rounded-[100px] border border-transparent">
                                     Confirm Plan
                                 </button>
                             </div>
