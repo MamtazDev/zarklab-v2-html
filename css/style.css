@@ -249,6 +249,18 @@ h3 {
     border-color: #14F092;
 }
 
+.activeBill, .billBtn:hover {
+    border: 1px solid #FFF !important;
+    color: #FFF !important;
+}
+
+.activesub, .confirmBtn:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #FFF !important;
+    background: #FFF !important;
+}
+
 
 
 /* Account Settings End */

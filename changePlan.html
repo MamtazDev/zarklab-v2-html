@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Account Setting</title>
+</head>
+
+<body>
+    <main>
+        <div class="flex gap-[10px]">
+            <div class="hidden lg:block w-[219px] h-screen border-r border-r-[#2B2C2F]">
+                <div
+                    class="bg-[#0d0d0d] w-full h-screen text-[#8A8A8A] px-[20px] pt-[32px] pb-[62px] flex flex-col justify-between">
+                    <div class="flex flex-col gap-[32px]">
+                        <div class="mb-[25px]">
+                            <a aria-current="page" class="active" href="/">
+                                <div class="flex  gap-[14px] items-center w-[131px] ">
+                                    <img src="./assets/companyLogo.png" alt="" class="object-contain">
+                                </div>
+                            </a>
+                        </div>
+
+                        <a class="flex items-center p-[8px] text-[14px] gap-[8px] text-[#8A8A8A] font-[400] " href="#">
+                            <img src="/assets/portfolio.png" alt="" class="object-contain h-[25px] w-[25px]">
+                            Recommender
+                        </a>
+                        <a class="flex items-center p-[8px]  text-[14px] gap-[8px] text-[#8A8A8A] font-[400] w-[18px] h-[18px]"
+                            href="/token">
+                            <img src="/assets/token.png" alt="" class="object-contain h-[25px] w-[25px] ml-[2px]">
+                            Token
+                        </a>
+                        <a class="activeNav flex items-center p-[8px] text-[14px] gap-[8px] text-[#8A8A8A] font-[400] whitespace-nowrap"
+                            href="index.html">
+                            <img src="/assets/chat.png" alt="" class="object-contain h-[25px] w-[25px]">
+                            Chat Terminal
+                        </a>
+                        <a class="flex items-center justify-between p-[8px] text-[14px] text-[#8A8A8A] font-[400] "
+                            href="#">
+                            <div class="flex items-center gap-[8px]">
+                                <img src="/assets/portfolionew.png" alt="" class="object-contain h-[25px] w-[25px]">
+                                Portfolio
+                            </div>
+                            <button class="ms-5">
+                                <img src="/assets/Status.png" alt="" class="object-contain h-[25px] w-[25px]">
+                            </button>
+                        </a>
+                        <a class="flex items-center justify-between p-[8px] text-[14px] text-[8A8A8A] font-[400] "
+                            href="/market">
+                            <div class="flex items-center gap-[8px]">
+                                <img src="/assets/market.png" alt="" class="object-contain h-[25px] w-[25px]">
+                                Market
+                            </div>
+                            <button>
+                                <img src="/assets/Status.png" alt="" class="object-contain h-[25px] w-[25px]">
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-[20px] pt-[64px] border-t border-[#212123]">
+                        <div class="flex gap-[10px]">
+                            <div class="rounded-full w-[18px] h-[18px]">
+                                <img src="./assets/avatar1.png" alt=""
+                                    class="w-full h-full object-contain rounded-full">
+                            </div>
+                            <p class="text-[14px] font-[400]">Spiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full">
+                <div>
+                    <div class="p-[24px] border-b border-b-[#2B2C2F]">
+                        <p class="text-[24px] text-[#FFF] font-[600]">Account Setting</p>
+                    </div>
+                    <div class="max-w-[580px] mx-auto px-2">
+                        <div class="flex items-center gap-3 pb-[20px] py-[42px]">
+                           <a href="accountSettings.html">
+                            <img src="./assets/leftArrow.png" alt="Back">
+                           </a>
+                            <h3 class="font-[600] text-[20px] text-[#FFF] leading-[26px]">
+                                CHANGE PLAN
+                            </h3>
+                        </div>
+                        <div>
+                            <p class="text-[16px] text-[#FFF] font-[500]">Current Plan</p>
+                            <div class="max-w-max border border-[#444] rounded-[8px] bg-[#121212] px-[15px] py-[18px] mb-[30px] md:mb-[60px]">
+                                <p class="text-[16px] font-[600] text-[#14F092]">FOUNDATION PLAN </p>
+                                <p class="text-[14px] font-[500] text-[#FFF]">
+                                    1000+ crypto insights, unlimited search queries, token recommendation,<br/> portfolio optimiser, and early access to new feature launches.
+                                </p>
+                                <p class="text-[12px] font-[400] text-[#8A8A8A]">Learn more</p>
+                                <p class="line-through decoration-1 text-[12px] font-[300] text-[#8A8A8A]">$30.99</p>
+                                <p class="text-[15px] font-[500] text-[#D3D3D3]">$10.99
+                                   <span class="text-[13px] font-[500] text-[#747474]">monthly</span> 
+                                </p>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-[16px] font-[500] text-[#FFF]">Billing Cycle</p>
+                                <div class="flex items-center gap-2 border border-[#444] rounded-full p-[5px]">
+                                    <button class="billBtn border border-transparent  rounded-[100px] px-[32px] py-[10px] text-[14px] font-[600] text-[#666]">
+                                        Monthly
+                                    </button>
+                                    <button class="activeBill border border-transparent rounded-[100px] billBtn px-[32px] py-[10px] text-[14px] font-[600] text-[#666]">
+                                        Yearly
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="underline decoration-1 text-[16px] font-[500] text-[#8A8A8A]">
+                                Cancel Subscription
+                            </button>
+                            <div class="flex justify-end items-center gap-2 border-t border-t-[#2B2C2F] py-[60px]">
+                                <button class="confirmBtn px-[18px] py-[13px] text-[20px] font-[600] text-[#666] rounded-[100px] border border-transparent">
+                                    Cancel
+                                </button>
+                                <button class="activesub confirmBtn px-[18px] py-[13px] text-[20px] font-[600] text-[#666] rounded-[100px] border border-transparent">
+                                    Confirm Plan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
