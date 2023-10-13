@@ -145,6 +145,24 @@ h3 {
     text-decoration: underline;
 }
 
+.enter_code input {
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #181818;
+    width: 70px;
+    height: 87px;
+    caret-color: #FFF;
+    color: #FFF;
+    font-size: 46px;
+    text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 @media only screen and (max-width:768px) {
     .auth_modal input {
@@ -171,6 +189,11 @@ h3 {
         font-size: 13px;
     }
 
+    .enter_code input {
+        height: 45px;
+        width: 27px;
+        font-size: 24px;
+    }
 }
 
 @media only screen and (max-width:395px) {
@@ -180,21 +203,58 @@ h3 {
     }
 }
 
-.btnSubmit:hover{
+.btnSubmit:hover {
     opacity: .9;
 }
 
-.createBtn{
+.createBtn {
     transition: 0.4s ease-in-out;
 }
 
-.createBtn:hover{
+.createBtn:hover {
     background-color: #FFF !important;
-    color:#000 !important;
+    color: #000 !important;
 }
 
 
+.redAlert {
+    color: #F03C14;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+
+.forgetfulEye img{
+    top: 41px;
+    right: 31%;
+}
+
+.rePassEye img{
+    top: 41px;
+    right: 3%;
+}
+
 /* Modal End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Dashboard CSS Start */
@@ -264,18 +324,21 @@ h3 {
     border-color: #14F092;
 }
 
-.activeBill, .billBtn:hover {
+.activeBill,
+.billBtn:hover {
     border: 1px solid #FFF !important;
     color: #FFF !important;
 }
 
-.activesub, .confirmBtn:hover {
+.activesub,
+.confirmBtn:hover {
     background-color: #fff !important;
     color: #000 !important;
     border: 1px solid #FFF !important;
 }
 
-.alertBtnActive, .alertBtn:hover{
+.alertBtnActive,
+.alertBtn:hover {
     background-color: #fff !important;
     color: #000 !important;
 }
