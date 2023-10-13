@@ -20,8 +20,8 @@
                 Launch static backdrop modal
             </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <!-- Modal sign up modal -->
+            <!-- <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
@@ -71,9 +71,7 @@
                                             <input class="d-block w-100" type="text" name="userName"
                                                 id="username" placeholder="Penzie">
                                         </div>
-                                        <!-- <button class="btnSubmit">
-                                            Continue
-                                        </button> -->
+                                        
                                         <button class="btnloading bg-white d-flex justify-content-center align-items-center gap-1" style="padding: 15px 35px;">
                                             <span style="background-color: #8B8B8B;"></span>
                                             <span style="background-color: #505050;"></span>
@@ -92,8 +90,74 @@
                         </div>
                     </div>
                 </div>
-                <!-- Sign Up Modal End -->
+            </div> -->
+            <!-- Sign Up Modal End -->
+
+            <!-- Modal signin modal -->
+            <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel">
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="auth_modal">
+                                <form action="">
+                                    <div
+                                        class="d-flex flex-column flex-lg-row justify-content-between align-items-start gap-4 mb-4 mb-lg-0">
+                                        <div class="d-flex flex-column justify-content-center gap-4">
+                                            <div>
+                                                <h6 class="mb-2">Welcome to ZarkLab!</h6>
+                                                <h6>Experience the new world of AI in Crypto</h6>
+                                            </div>
+                                            <div>
+                                                <label class="d-block mb-2" for="email">Email or Username</label>
+                                                <input class="d-block w-100" type="text" name="email" id="email"
+                                                    placeholder="penelope@zarklab.ai">
+                                            </div>
+                                        </div>
+                                        <div class="d-none d-lg-block">
+                                            <img class="img-fluid" src="./assets/dog_astronaut.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center gap-4">
+
+                                        <div class="pass_eye position-relative">
+                                            <label class="d-block mb-2" for="password">Create a
+                                                password*</label>
+                                            <input class="d-block w-100 mb-3" type="password" name="password"
+                                                id="password" placeholder="*********">
+                                            <img class="position-absolute img-fluid" src="./assets/pass_eye.png"
+                                                alt="img" />
+                                        </div>
+
+                                        <button
+                                            class="d-none d-lg-block btnloading bg-white d-flex justify-content-center align-items-center gap-1" style="margin-right: 60px;">
+                                            Login
+                                        </button>
+
+                                        <div class="d-block d-lg-none w-100">
+                                            <div class="d-flex justify-content-between align-items-center gap-4 w-100">
+                                                <div>
+                                                    <button class="btnloading bg-white">
+                                                        Login
+                                                    </button>
+                                                </div>
+
+                                                <div>
+                                                    <img class="img-fluid" src="./assets/dog_astronaut_small.png"
+                                                        alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Sign in Modal End -->
         </div>
 
     </main>
