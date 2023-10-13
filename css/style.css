@@ -106,7 +106,9 @@ h3 {
     border-radius: 100px;
     border: 1px solid #000;
     background: #FFF;
+    transition: 0.4s ease-in-out;
 }
+
 
 .btnloading span {
     height: 8px;
@@ -176,6 +178,19 @@ h3 {
         top: 36px;
         right: 10px;
     }
+}
+
+.btnSubmit:hover{
+    opacity: .9;
+}
+
+.createBtn{
+    transition: 0.4s ease-in-out;
+}
+
+.createBtn:hover{
+    background-color: #FFF !important;
+    color:#000 !important;
 }
 
 
