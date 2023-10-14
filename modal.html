@@ -264,7 +264,7 @@
                                                     </button>
                                                     <button
                                                         class="createBtn btnSubmit bg-transparent text-white border-none"
-                                                        style="border: transparent;     padding: 9px 10px;">
+                                                        style="border: transparent; padding: 9px 10px;">
                                                         Create Account
                                                     </button>
                                                 </div>
@@ -384,15 +384,16 @@
             <!-- Forget Pasword step 3 Email Exits Modal End -->
 
             <!-- Password Change success Message Modal Start -->
-            <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel">
+            <!-- <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel">
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content pb-0">
                         <div class="modal-body pb-0">
                             <div class="auth_modal">
-                                <div class="successWave d-flex flex-column-reverse flex-lg-row   justify-content-center align-items-center">
+                                <div
+                                    class="successWave d-flex flex-column-reverse flex-lg-row   justify-content-center align-items-center">
                                     <div>
-                                        <img src="./assets/astronaut_waving.png" alt="img-fluid" />
+                                        <img class="img-fluid" src="./assets/astronaut_waving.png" alt="img" />
                                     </div>
                                     <div>
                                         <h2 class="mb-3">
@@ -411,8 +412,51 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Password Change success Message Modal End -->
+
+            <!-- Sign in Unsubscribed User Modal Start -->
+            <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel">
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="auth_modal">
+                                <div
+                                    class="successWave d-flex flex-column flex-lg-row   justify-content-center align-items-center">
+
+                                    <div>
+                                        <div class="mb-3 mb-lg-5">
+                                            <h6 class="mb-4">
+                                                Hi [Username], Welcome back to ZarkLab!
+                                            </h6>
+                                            <h6>
+                                                We noticed that your account is no longer<br/> subscribed to ZarkLab. Would you
+                                                like to<br/> join us again?
+                                            </h6>
+                                        </div>
+                                        <div class="d-flex flex-column flex-lg-row justify-content-start align-items-start  gap-2">
+                                            <button class="btnSubmit">
+                                                Yes
+                                            </button>
+                                            <button
+                                                class="createBtn btnSubmit bg-transparent text-white border-none"
+                                                style="border: transparent; padding: 9px 10px;">
+                                                Contact support
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <img class="img-fluid" src="./assets/dog_astronaut.png" alt="img" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sign in Unsubscribed User Modal End -->
 
 
         </div>
