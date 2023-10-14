@@ -58,6 +58,7 @@ h3 {
 }
 
 /* Modal Start */
+
 .loginhere p,
 .loginhere a {
     color: #FFF;
@@ -109,7 +110,6 @@ h3 {
     background: #FFF;
     transition: 0.4s ease-in-out;
 }
-
 
 .btnloading span {
     height: 8px;
@@ -186,7 +186,6 @@ input[type="number"]::-webkit-outer-spin-button {
     line-height: 160%;
 }
 
-
 .forgetfulEye img {
     top: 41px;
     right: 19%;
@@ -223,6 +222,39 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+.subscription_modal h3 {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.subscription_modal h5 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.subscription_modal p {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.subscription_modal button {
+    padding: 13px 60px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background: transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.may_next:hover {
+    border: 1px solid #FFF !important;
+}
 
 @media only screen and (max-width:768px) {
     .auth_modal input {
@@ -278,13 +310,32 @@ input[type="number"]::-webkit-outer-spin-button {
         font-size: 32px;
     }
 
-    .successWave p{
+    .successWave p {
         font-size: 16px;
         margin-bottom: 30px;
     }
 
     .successWave {
         gap: 20px
+    }
+
+    .subscription_modal h5 {
+        font-size: 16px;
+    }
+
+    .subscription_modal p {
+        font-size: 12px;
+    }
+
+    .subscription_modal button {
+        font-size: 14px;
+    }
+
+    .backBtn {
+        color: #747474 !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        border: none !important;
     }
 
 }
