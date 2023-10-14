@@ -502,7 +502,7 @@
             <!-- Sign in Unsubscribed User Modal step 2 End -->
 
             <!-- Payment Success Modal Start-->
-            <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel">
+            <!-- <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel">
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content pb-0">
@@ -515,15 +515,15 @@
                                     </div>
                                     <div>
                                         <h2 class="mb-3">
-                                            Payment Successful
+                                            Payment Successful!
                                         </h2>
-                                        <p class="mb-2">
+                                        <p class="mb-2>
                                             Welcome to Zarklab!<br/>
                                         </p>
-                                        <p>
+                                        <p >
                                             You are officially part of ZarkLab’s foundational plan. Please use your login credentials to access ZarkLab on desktop. See you there!
                                         </p>
-                                        <button class="d-block mx-auto btnSubmit">
+                                        <button class="d-block mx-auto btnSubmit mb-5">
                                             Take me there!
                                         </button>
                                     </div>
@@ -532,8 +532,49 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Payment Success Modal End -->
+
+            <!-- Payment Failed Modal Start-->
+            <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel">
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="auth_modal">
+                                <div
+                                    class="successWave d-flex flex-column-reverse flex-lg-row   justify-content-center align-items-center">
+                                    <div>
+                                        <img class="img-fluid d-none d-lg-block" src="./assets/cancelsubscription.png" alt="img" />
+                                    </div>
+                                    <div>
+                                        <div class="d-block d-lg-none">
+                                            <div class="mb-3 d-flex justify-content-between align-items-center gap-3">
+                                                <img class="img-fluid" src="./assets/cancelsubscription_Small.png" alt="img" />
+
+                                                <h2 class="text-start">
+                                                    Oops!<br/> Payment Failed
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <h2 class="mb-3 d-none d-lg-block">
+                                            Oops! Payment Failed
+                                        </h2>
+                                        <p class="mb-5">
+                                            Your payment could not be processed.<br />
+                                            Please try again.!
+                                        </p>
+                                        <button class="d-block mx-auto btnSubmit ">
+                                            Try again
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Payment Failed Modal End -->
 
         </div>
 
