@@ -19,13 +19,17 @@
                 Cancel Subscription
             </button>
 
-            <!--  Modal Start -->
+            <!-- Payment  Modal Start -->
             <dialog id="payment" class="modal">
-                <div class="modal-box px-[63px] py-[69px] w-11/12 max-w-7xl">
+                <div class="modal-box px-[34px] md:px-[63px] py-[40px] md:py-[69px] w-11/12 max-w-7xl">
                     <div class="payment">
                         <h2 class="font-[600] text-[24px] md:text-[40px] text-[#FFF] mb-[45px]">
                             Join our Foundation Plan [Limited Seats]
                         </h2>
+
+                        <div class="block md:hidden mb-[42px]">
+                            <img class="" src="./assets/planet_small.png" alt="Payment" />
+                        </div>
                         <div class="flex justify-between items-center gap-4">
                             <div>
                                 <p class="text-[24px] md:text-[36px] text-[#EBEBEB] font-[500] mb-[16px]">
@@ -107,7 +111,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div>
+                            <div class="hidden md:block">
                                 <img class="h-auto max-w-full" src="./assets/payment-planet.png" alt="Payment" />
                             </div>
                         </div>
@@ -123,30 +127,127 @@
                             </p>
                             <div class="inline-block">
                                 <div class="flex items-center gap-2 border border-[#444] rounded-full p-[5px]">
-                                    <button class="billBtn border border-transparent  rounded-[100px] px-[32px] py-[10px] text-[12px] md:text-[14px] font-[600] text-[#666]">
+                                    <button
+                                        class="billBtn border border-transparent  rounded-[100px] px-[32px] py-[10px] text-[12px] md:text-[14px] font-[600] text-[#666]">
                                         Monthly
                                     </button>
-                                    <button class="activeBill border border-transparent rounded-[100px] billBtn px-[32px] py-[10px] text-[12px] md:text-[14px] font-[600] text-[#666]">
+                                    <button
+                                        class="activeBill border border-transparent rounded-[100px] billBtn px-[32px] py-[10px] text-[12px] md:text-[14px] font-[600] text-[#666]">
                                         Yearly
                                     </button>
                                 </div>
                             </div>
-                            <div>
-                                <div class="flex justify-between items-center gap-2">
-                                    <p class="text-[20px] md:text-[24px] text-[#FFF] font-[500] leading-[32px] md:leading-[38px]">
-                                        Total Amount
-                                    </p>
-                                    <p class="text-[16px] md:text-[16px] text-[#DBDBDB] font-[500]">
-                                        <span class="text-[#FFF]"> 
-                                            $
-                                        </span>
-                                        10.99/ monthly
+                        </div>
+                        <div class="mb-[60px] md:mb-[70px]">
+                            <div class="flex justify-between items-center mb-2">
+                                <p
+                                    class="whitespace-nowrap text-[20px] md:text-[24px] text-[#FFF] font-[500] leading-[32px] md:leading-[38px]">
+                                    Total Amount
+                                </p>
+                                <p class="whitespace-nowrap text-[16px] md:text-[16px] text-[#DBDBDB] font-[500]">
+                                    <span class="text-[#FFF]">
+                                        $
+                                    </span>
+                                    10.99/ monthly
+                                </p>
+                            </div>
+                            <div
+                                class="flex justify-between items-center gap-4 px-[24px] py-[10px] border border-[#444] bg-[#121212] rounded-[8px]">
+                                <p
+                                    class="text-[16px] md:text-[20px] text-[#FFF] font-[400] leading-[25px] md:leading-[32px]">
+                                    Total Amount
+                                </p>
+                                <p class="text-[16px] md:text-[24px] text-[#FFF] font-[500]">
+                                    $10.99
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-[38px]">
+                            <p class="text-[24px] md:text-[36px] text-[#C1C1C1] font-[500] mb-[18px]">
+                                Payment Details
+                            </p>
+                            <p
+                                class="text-[16px] md:text-[20px] text-[#C1C1C1] font-[400] leading-[25px] md:leading-[32px] mb-[42px]">
+                                Recurring billing payment
+                            </p>
+                            <div class="flex flex-row md:flex-col gap-[20px] md:gap-[28px]">
+                                <button
+                                    class="whitespace-nowrap w-[131px] md:w-[212px] border border-[#FFFBFB] bg-[#000] rounded-[4px] px-[16px] py-[12px] text-[14px] text-[#FFF] font-[600] text-[#666]">
+                                    Pay with
+                                    <img class="inline" src="./assets/pay.png" alt="img" />
+                                </button>
+
+
+                                <button
+                                    class="whitespace-nowrap w-[131px] md:w-[212px] border border-[#FFC43A] rounded-[4px] bg-[#FFC43A] px-[10px] py-[12px] text-[12px] md:text-[14px] text-[#FFF] font-[600] text-[#666]">
+                                    Buy with
+                                    <img class="inline" src="./assets/paypal1.png" alt="img" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-[50px]">
+                            <div class="w-full">
+                                <label for="card_number" class="text-[16px] md:text-[20px] text-[#FFF] font-[400]">Card
+                                    Number</label>
+
+                                <input id="card_number" type="number" placeholder="1234 5678 9123 4567"
+                                    class="bg-[#101010] border border-[#FFF] rounded-[100px] px-[24px] py-[8px] text-[14px] text-[#FFF] font-[600] placeholder:text-[#444] text-[#FFF] text-[12px] font-[500] w-full mb-1" />
+                                <div class="flex items-center gap-1">
+                                    <img src="./assets/dangerIcon.png" alt="Danger" />
+                                    <p class="text-[12px] text-[#F03C14] font-[400]">
+                                        Invalid Card Number
                                     </p>
                                 </div>
                             </div>
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <div class="w-full">
+                                    <label for="date"
+                                        class="text-[16px] md:text-[20px] text-[#FFF] font-[400]">Expiration
+                                        Date
+                                        (MMYY)</label>
+
+                                    <input id="date" type="number" placeholder="1234"
+                                        class="bg-[#101010] border border-[#FFF] rounded-[100px] px-[24px] py-[8px] text-[14px] text-[#FFF] font-[600] placeholder:text-[#444] text-[#FFF] text-[12px] font-[500] w-full" />
+                                </div>
+                                <div class="w-full">
+                                    <label for="number" class="text-[16px] md:text-[20px] text-[#FFF] font-[400]">CVV/
+                                        CVC</label>
+                                    <input id="number" type="number" placeholder="123"
+                                        class="bg-[#101010] border border-[#FFF] rounded-[100px] px-[24px] py-[8px] text-[14px] text-[#FFF] font-[600] placeholder:text-[#444] text-[#FFF] text-[12px] font-[500] w-full" />
+                                </div>
+                            </div>
                         </div>
+                        <div>
+                            <p class="text-[24px] md:text-[36px] text-[#C1C1C1] font-[500] mb-[18px]">
+                                Billing information
+                            </p>
+                            <p
+                                class="text-[16px] md:text-[20px] text-[#C1C1C1] font-[400] leading-[25px] md:leading-[32px] mb-[42px]">
+                                Please confirm your billing details to proceed.
+                            </p>
+                            <form action="">
+                                <div class="bill_input">
+                                    <div class="flex gap-2 md:gap-[60px]">
+                                        <input class="block w-full" type="text" placeholder="First Name*"
+                                            autocomplete="off">
 
-
+                                        <input class="block w-full" type="text" placeholder="Last Name*"
+                                            autocomplete="off">
+                                    </div>
+                                    <input class="block w-full" type="text"
+                                        placeholder="Address (P.O. box, company name, c/o)*" autocomplete="off">
+                                    <input class="block w-full" type="text"
+                                        placeholder="Address line 2 (Apartment, suite, unit)" autocomplete="off">
+                                    <div class="flex gap-2 md:gap-[60px]">
+                                        <input class="block w-full" type="number" placeholder="Postal Code*"
+                                            autocomplete="off">
+                                        <input class="block w-full" type="text" placeholder="Country*"
+                                            autocomplete="off">
+                                    </div>
+                                    <button class="pay_now_btn" type="button">Pay Now</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <form method="dialog" class="modal-backdrop">
@@ -155,7 +256,9 @@
             </dialog>
             <!-- Payment Modal End -->
         </div>
-    </main>
+
+
+       
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
