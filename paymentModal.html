@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Payment</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <button onclick="payment.showModal()"
+                class="underline decoration-1 text-[16px] font-[500] text-[#8A8A8A] mb-5 md:mb-[60px]">
+                Cancel Subscription
+            </button>
+
+            <!--  Modal Start -->
+            <dialog id="payment" class="modal">
+                <div class="modal-box px-[63px] py-[69px] w-11/12 max-w-7xl">
+                    <div class="payment">
+                        <h2 class="font-[600] text-[24px] md:text-[40px] text-[#FFF] mb-[45px]">
+                            Join our Foundation Plan [Limited Seats]
+                        </h2>
+                        <div class="flex justify-between items-center gap-4">
+                            <div>
+                                <p class="text-[24px] md:text-[36px] text-[#EBEBEB] font-[500] mb-[16px]">
+                                    Plan Details
+                                </p>
+
+                                <p
+                                    class="text-[16px] md:text-[20px] text-[#CDCDCD] font-[400] mb-[16px] leading-[25px] md:leading-[32px]">
+                                    What you’re getting into
+                                </p>
+                            </div>
+
+                            <div>
+                                <p
+                                    class="line-through decoration-1 text-[14px] md:text-[20px] text-[#8a8a8a] font-[300]">
+                                    $30.99
+                                </p>
+
+                                <p class="text-[20px] md:text-[32px] text-[#e0e0e0] font-[500]">
+                                    <span class="text-[#FFF]">
+                                        $
+                                    </span>
+                                    10.99
+                                    <span class="text-[12px] md:text-[16px] text-[#747474]">
+                                        monthly
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 mb-[60px]">
+                            <div class="flex flex-col gap-3">
+                                <div class="flex items-center gap-3">
+                                    <img src="./assets/optionIcon.png" alt="icon" />
+                                    <p class="text-[16px] md:text-[20px] text-[#FFF] font-[500]">
+                                        1000+ Crypto Insights & Signals
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3">
+                                    <img src="./assets/optionIcon.png" alt="icon" />
+                                    <p class="text-[16px] md:text-[20px] text-[#FFF] font-[500]">
+                                        Personalised AI trading Recommendations
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3">
+                                    <img src="./assets/optionIcon.png" alt="icon" />
+                                    <p class="text-[16px] md:text-[20px] text-[#FFF] font-[500]">
+                                        Unlimited Access to the Crypto Chat Terminal
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3">
+                                    <img src="./assets/optionIcon.png" alt="icon" />
+                                    <p class="text-[16px] md:text-[20px] text-[#FFF] font-[500]">
+                                        Real-time Fraud Alerts and Enhanced Protection
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3">
+                                    <img src="./assets/optionIcon.png" alt="icon" />
+                                    <p class="text-[16px] md:text-[20px] text-[#FFF] font-[500]">
+                                        ICO and New Token Launch Reports
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3">
+                                    <img src="./assets/optionIcon.png" alt="icon" />
+                                    <p class="text-[16px] md:text-[20px] text-[#FFF] font-[500]">
+                                        Advanced Filters and Customised Search
+                                    </p>
+                                </div>
+
+                                <div class="flex items-center gap-3">
+                                    <img src="./assets/optionIcon.png" alt="icon" />
+                                    <p class="text-[16px] md:text-[20px] text-[#FFF] font-[500]">
+                                        Early access to new analytics tools and insights
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="h-auto max-w-full" src="./assets/payment-planet.png" alt="Payment" />
+                            </div>
+                        </div>
+
+
+                        <div class="mb-[50px]">
+                            <p class="text-[24px] md:text-[36px] text-[#C1C1C1] font-[500] mb-[18px]">
+                                Payment Frequency
+                            </p>
+                            <p
+                                class="text-[16px] md:text-[20px] text-[#C1C1C1] font-[400] leading-[25px] md:leading-[32px] mb-[26px]">
+                                Decide when you get billed
+                            </p>
+                            <div class="inline-block">
+                                <div class="flex items-center gap-2 border border-[#444] rounded-full p-[5px]">
+                                    <button class="billBtn border border-transparent  rounded-[100px] px-[32px] py-[10px] text-[12px] md:text-[14px] font-[600] text-[#666]">
+                                        Monthly
+                                    </button>
+                                    <button class="activeBill border border-transparent rounded-[100px] billBtn px-[32px] py-[10px] text-[12px] md:text-[14px] font-[600] text-[#666]">
+                                        Yearly
+                                    </button>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center gap-2">
+                                    <p class="text-[20px] md:text-[24px] text-[#FFF] font-[500] leading-[32px] md:leading-[38px]">
+                                        Total Amount
+                                    </p>
+                                    <p class="text-[16px] md:text-[16px] text-[#DBDBDB] font-[500]">
+                                        <span class="text-[#FFF]"> 
+                                            $
+                                        </span>
+                                        10.99/ monthly
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                    <button>close</button>
+                </form>
+            </dialog>
+            <!-- Payment Modal End -->
+        </div>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
